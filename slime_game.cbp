@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="slime_defender" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/slime_defender" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="allegro/lib/liballegro_monolith-debug.dll.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/slime_defender" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++11" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="allegro/lib/liballegro_monolith.dll.a" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="allegro/include" />
+		</Compiler>
+		<Unit filename="allegro_include.h" />
+		<Unit filename="archer.h" />
+		<Unit filename="attacker.cpp" />
+		<Unit filename="attacker.h" />
+		<Unit filename="bishop.h" />
+		<Unit filename="black_knight.h" />
+		<Unit filename="defender.cpp" />
+		<Unit filename="defender.h" />
+		<Unit filename="fight.cpp" />
+		<Unit filename="fight.h" />
+		<Unit filename="fire_slime.h" />
+		<Unit filename="gamewindow.cpp" />
+		<Unit filename="gamewindow.h" />
+		<Unit filename="global.cpp" />
+		<Unit filename="global.h" />
+		<Unit filename="human.h" />
+		<Unit filename="ice_slime.h" />
+		<Unit filename="invade.cpp" />
+		<Unit filename="invade.h" />
+		<Unit filename="knight.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="meganut.h" />
+		<Unit filename="menu.cpp" />
+		<Unit filename="menu.h" />
+		<Unit filename="nut.h" />
+		<Unit filename="object_include.h" />
+		<Unit filename="slime.h" />
+		<Unit filename="three_slime.h" />
+		<Unit filename="water_slime.h" />
+		<Unit filename="wither.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
